@@ -1,1 +1,1 @@
-# AwaisGraphics-Portfolio
+# AwizoGraphics-Portfolio
