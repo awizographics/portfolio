@@ -7,17 +7,15 @@
   --white: #ffffff;
   /* --gradient-1: linear-gradient(to bottom right, #62393c, #181e41); */
   --gradient-1: linear-gradient(to bottom right, #121212, #181e41);
-  --gradient-2: linear-gradient(
-    to bottom,
-    var(--primary-color),
-    var(--secondary-color)
-  );
+  --gradient-2: linear-gradient(to bottom,
+      var(--primary-color),
+      var(--secondary-color));
   --scroll-btn-size: 54px;
   --scroll-btn-bg: linear-gradient(135deg, #10b4e9 0%, #10b4e9 100%);
   --scroll-btn-shadow: 0 8px 20px rgba(20, 20, 30, 0.45);
   --scroll-btn-color: #fff;
   /* --scroll-btn-radius: 14px; */
-  --scroll-btn-gap: 22px; 
+  --scroll-btn-gap: 22px;
   --max-width: 1250px;
 }
 
@@ -76,11 +74,20 @@ a {
   font-weight: 800;
   cursor: pointer;
   transition: 0.3s ease-in-out;
-  height:60px;
+  height: 60px;
 }
+
 .logo:hover {
   transform: scale(1.1);
 }
+
+.logo-footer {
+  height: 100px;
+  width: auto;
+  justify-self: center;
+  padding-bottom: 10px;
+}
+
 /* .logo span {
   background: linear-gradient(270deg, #798ae1 10%, #10b4e9 100%);
   background-clip: text;
@@ -249,13 +256,16 @@ nav {
 .about__content .section__description {
   margin-bottom: 2rem;
 }
+
 .service__container .section__header {
   text-align: left;
 }
+
 .service__container .section__description {
   text-align: left;
   margin: 0;
 }
+
 .service__grid {
   margin-top: 2rem;
   display: grid;
@@ -370,24 +380,29 @@ nav {
   background: var(--gradient-2);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 .contact__socials .whatsapp:hover {
   background: #47a22f;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 .contact__socials .linkedin:hover {
   background: #0a66c2;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 .contact__socials .instagram:hover {
   background: #db00ec;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
+
 .footer {
   padding: 1rem;
   font-size: 0.9rem;
   color: var(--extra-light);
   text-align: center;
 }
+
 .scroll-top {
   position: fixed;
   right: var(--scroll-btn-gap);
@@ -412,20 +427,24 @@ nav {
   backdrop-filter: blur(4px);
   -webkit-tap-highlight-color: transparent;
 }
+
 .scroll-top.visible {
   transform: translateY(0) scale(1);
   opacity: 1;
   pointer-events: auto;
 }
+
 .scroll-top:hover,
 .scroll-top:focus {
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 12px 30px rgba(20, 20, 30, 0.55);
   outline: none;
 }
+
 .scroll-top.focus-visible {
   box-shadow: 0 0 0 4px rgba(201, 59, 136, 0.12), var(--scroll-btn-shadow);
 }
+
 .scroll-top svg {
   display: block;
   width: 52%;
@@ -433,6 +452,7 @@ nav {
   color: inherit;
   filter: drop-shadow(0 1px 0 rgba(255, 255, 255, 0.05));
 }
+
 @media (max-width: 480px) {
   :root {
     --scroll-btn-size: 46px;
@@ -440,11 +460,13 @@ nav {
     --scroll-btn-radius: 12px;
   }
 }
+
 @media (prefers-reduced-motion: reduce) {
   .scroll-top {
     transition: none;
   }
 }
+
 @media (width > 576px) {
   .service__grid {
     grid-template-columns: repeat(2, 1fr);
@@ -556,6 +578,7 @@ nav {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 /* 🌐 Responsive Fixes */
 @media (max-width: 768px) {
   .header__container {
@@ -589,7 +612,8 @@ nav {
     font-size: 0.95rem;
   }
 }
-.footer a{
+
+.footer a {
   color: #fff;
   font-weight: bold;
 }
