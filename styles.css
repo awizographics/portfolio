@@ -6,7 +6,7 @@
   --extra-light: #f3f4f6;
   --white: #ffffff;
   /* --gradient-1: linear-gradient(to bottom right, #62393c, #181e41); */
-  --gradient-1: linear-gradient(to bottom right, #121212, #181e41);
+  --gradient-1: linear-gradient(to bottom right, #121212, #23042c);
   --gradient-2: linear-gradient(to bottom,
       var(--primary-color),
       var(--secondary-color));
@@ -317,6 +317,7 @@ nav {
 .portfolio__card img {
   transition: 0.5s;
   margin-bottom: 10px;
+  border-radius:10px;
 }
 
 .portfolio__card:hover img {
